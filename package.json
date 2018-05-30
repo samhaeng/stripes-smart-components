@@ -98,6 +98,7 @@
     "react-intl": "^2.4.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.0.0",
+    "react-transition-group": "^2.3.1",
     "redux-form": "^7.0.3"
   },
   "peerDependencies": {
