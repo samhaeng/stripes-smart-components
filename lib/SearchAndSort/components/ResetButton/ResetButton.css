@@ -1,3 +1,11 @@
 /**
  * Reset Button
  */
+
+.resetButtonRoot .button {
+  padding: 0 12px 0 6px;
+}
+
+.resetButtonRoot .button:disabled {
+  background-color: transparent !important;
+}
