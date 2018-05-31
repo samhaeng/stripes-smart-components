@@ -3,12 +3,5 @@
  */
 
 .resetButtonRoot .button:disabled {
-<<<<<<< HEAD
   background-color: transparent !important;
-=======
-  background-color: transparent;
-  opacity: 0;
-  transition: opacity 0.3s;
-  transition-delay: 0.3s;
->>>>>>> d94a17d56c48e5c379256e76cf694a11bc675c5c
 }
