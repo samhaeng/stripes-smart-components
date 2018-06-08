@@ -34,8 +34,8 @@
 }
 
 .fasterExitTransition.transition {
-  transition:   opacity 200ms ease-in-out 300ms,
-                max-height 400ms linear 100ms;
+  transition:   opacity 200ms ease-in-out 100ms,
+                max-height 300ms linear 100ms;
 }
 
 .transitionEntered {
