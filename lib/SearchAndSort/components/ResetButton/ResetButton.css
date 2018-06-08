@@ -4,10 +4,7 @@
 
 .resetButtonRoot .button {
   padding: 0 6px 0 3px;
-}
-
-.resetButtonRoot .button:disabled {
-  background-color: transparent !important;
+  background: none !important; /* Remove gray background color from disabled button */
 }
 
 /**
@@ -15,31 +12,22 @@
  */
 
 .transition {
-  transition:   opacity 600ms ease-in-out 650ms,
-                max-height 1000ms linear 750ms;
   max-height: 0;
   opacity: 0;
   overflow: hidden;
 }
 
-.transitionEntering {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-}
-
-.transitionExiting {
-  transition:   opacity 600ms ease-in-out 1350ms,
-                max-height 1000ms linear 750ms;
-}
-
-.fasterExitTransition.transition {
-  transition:   opacity 200ms ease-in-out 100ms,
-                max-height 300ms linear 100ms;
-}
-
-.transitionEntered {
+.transitionEntered, .transitionEntering {
   max-height: 250px;
   overflow: visible;
   opacity: 1;
+  transition: opacity 300ms ease-in 750ms, max-height 1000ms linear 750ms;
+}
+
+.transitionExiting, .transitionExited {
+  transition: opacity 600ms ease-out 1350ms, max-height 1000ms linear 750ms;
+}
+
+.fasterExitTransition.transition {
+  transition: opacity 300ms ease-out 200ms, max-height 300ms linear 100ms;
 }
