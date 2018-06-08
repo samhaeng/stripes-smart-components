@@ -6,3 +6,8 @@
   .searchField {
     margin: 0 15px;
   }
+
+  /* Reset Button */
+  .resetButtonWrap .resetButton {
+    margin-left: -3px;
+  }
