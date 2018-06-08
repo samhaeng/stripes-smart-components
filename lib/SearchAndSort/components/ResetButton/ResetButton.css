@@ -9,3 +9,37 @@
 .resetButtonRoot .button:disabled {
   background-color: transparent !important;
 }
+
+/**
+ * Transition styles
+ */
+
+.transition {
+  transition:   opacity 600ms ease-in-out 650ms,
+                max-height 1000ms linear 750ms;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.transitionEntering {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.transitionExiting {
+  transition:   opacity 600ms ease-in-out 1350ms,
+                max-height 1000ms linear 750ms;
+}
+
+.fasterExitTransition.transition {
+  transition:   opacity 200ms ease-in-out 300ms,
+                max-height 400ms linear 100ms;
+}
+
+.transitionEntered {
+  max-height: 250px;
+  overflow: visible;
+  opacity: 1;
+}
