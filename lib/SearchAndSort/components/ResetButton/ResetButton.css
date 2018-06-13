@@ -29,5 +29,5 @@
 }
 
 .fasterExitTransition.transition {
-  transition: max-height 1000ms linear, opacity 600ms ease-out 400ms;
+  transition: max-height 1000ms linear, opacity 600ms ease-out 500ms;
 }
