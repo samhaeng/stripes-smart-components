@@ -21,13 +21,13 @@
   max-height: 250px;
   overflow: visible;
   opacity: 1;
-  transition: opacity 300ms ease-in 750ms, max-height 1000ms linear 750ms;
+  transition: max-height 1000ms linear 750ms, opacity 300ms ease-in 750ms;
 }
 
 .transitionExiting, .transitionExited {
-  transition: opacity 600ms ease-out 1350ms, max-height 1000ms linear 750ms;
+  transition: max-height 1000ms linear 750ms, opacity 500ms ease-out 1300ms;
 }
 
 .fasterExitTransition.transition {
-  transition: opacity 300ms ease-out 200ms, max-height 300ms linear 100ms;
+  transition: max-height 1000ms linear, opacity 600ms ease-out 400ms;
 }
