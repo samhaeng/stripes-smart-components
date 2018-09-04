@@ -2,6 +2,8 @@
 
 ## 1.5.0 (IN PROGRESS)
 
+* Added PasswordStrength component with EN translations.
+* Added "tai-password-strength" to package.json for PasswordStrength.
 * Removed unused packages from package.json. Refs STRIPES-490.
 * Upgrade `<SearchAndSort>` to use new filter-related APIs. Fixes STSMACOM-35 and resolves STRIPES-493.
 * Store local changes to search term in component state, and render from that. Fixes STSMACOM-33.
@@ -84,6 +86,8 @@
 * Cleaner handling of result-count header. Refs STSMACOM-108. Available from v1.4.27.
 * Lock react-bootstrap to v0.32.1 to avoid buggy babel-runtime 7.0.0-beta.42 dep. Refs FOLIO-1425. Available from v1.4.28.
 * New optional `notLoadedMessage` prop for `<SearchAndSort>`. Fixes STSMACOM-116. Available from v1.4.29.
+* Fix initial query string to keep searchField updated. Fixes STSMACOM-119.
+* Wait until settings load before rendering the form. Refs UICIRC-75. Available from v1.4.32.
 
 ## [1.4.0](https://github.com/folio-org/stripes-smart-components/tree/v1.4.0) (2017-11-29)
 [Full Changelog](https://github.com/folio-org/stripes-smart-components/compare/v1.3.0...v1.4.0)
